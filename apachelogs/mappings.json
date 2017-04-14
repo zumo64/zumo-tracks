@@ -1,0 +1,11 @@
+{
+  "type": {
+    "dynamic": "false",
+    "properties": {
+      "@timestamp": {
+        "format": "epoch_second",
+        "type": "date"
+      }
+    }
+  }
+}

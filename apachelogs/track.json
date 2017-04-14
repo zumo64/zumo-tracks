@@ -1,0 +1,56 @@
+{
+  "short-description": "My first track",
+  "description": "This test indexes 8.6M documents (POIs from Geonames, total 2.8 GB json) using 8 client threads and 5000 docs per bulk request against Elasticsearch",
+  "indices": [
+    {
+      "name": "apachelogs",
+      "types": [
+        {
+          "name": "type",
+          "mapping": "mappings.json",
+          "documents": "logs.json.bz2"
+        }
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "name": "index",
+      "operation-type": "index",
+      "bulk-size": 5000
+    },
+    {
+      "name": "query-match-all",
+      "operation-type": "search",
+      "body": {
+        "query": {
+          "match_all": {}
+        }
+      }
+    }
+  ],
+  "challenges": [
+    {
+      "name": "index-and-query",
+      "description": "",
+      "default": true,
+      "index-settings": {
+        "index.number_of_replicas": 0
+      },
+      "schedule": [
+        {
+          "operation": "index",
+          "warmup-time-period": 120,
+          "clients": 8
+        },
+        {
+          "operation": "query-match-all",
+          "clients": 8,
+          "warmup-iterations": 1000,
+          "iterations": 1000,
+          "target-throughput": 100
+        }
+      ]
+    }
+  ]
+}
