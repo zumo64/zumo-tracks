@@ -41,11 +41,11 @@
         {
           "operation": "index",
           "warmup-time-period": 120,
-          "clients": 8
+          "clients": 1
         },
         {
           "operation": "query-match-all",
-          "clients": 8,
+          "clients": 1,
           "warmup-iterations": 1000,
           "iterations": 1000,
           "target-throughput": 100
