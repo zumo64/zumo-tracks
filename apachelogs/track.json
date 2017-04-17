@@ -8,7 +8,10 @@
         {
           "name": "logs",
           "mapping": "mappings.json",
-          "documents": "logs.json.bz2"
+          "documents": "logs.json.bz2",
+          "document-count": 300000,
+          "compressed-bytes": 13948856,
+          "uncompressed-bytes": 411560692
         }
       ]
     }
