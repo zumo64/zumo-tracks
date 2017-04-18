@@ -22,7 +22,7 @@
         {
         "name": "apachelogs-template",
         "index-pattern": "apachelogs-*",
-        "delete-matching-indices": true,
+        "delete-matching-indices": false,
         "template": "template.json"
         }
       ],
@@ -30,8 +30,7 @@
     {
       "name": "index",
       "operation-type": "index",
-      "bulk-size": 5000,
-      "index":"active-logs"
+      "bulk-size": 5000
     },
     {
       "name": "query-match-all",
