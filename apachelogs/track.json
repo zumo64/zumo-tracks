@@ -30,7 +30,7 @@
       "name": "index",
       "operation-type": "index",
       "bulk-size": 5000,
-      "index":"active-logs"
+      "index":"apachelogs-1"
     },
     {
       "name": "query-match-all",
@@ -54,7 +54,7 @@
       "schedule": [
         {
           "operation": "index",
-          "warmup-time-period": 5,
+          "warmup-time-period": 0,
           "clients": 1
         },
         {
