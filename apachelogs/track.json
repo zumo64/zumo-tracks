@@ -13,8 +13,11 @@
           "compressed-bytes": 13948856,
           "uncompressed-bytes": 411560692
         }
-      ],
-      "templates": [
+      ]
+      
+    },
+    {
+    "templates": [
         {
         "name": "apachelogs-template",
         "index-pattern": "apachelogs-*",
@@ -28,7 +31,8 @@
     {
       "name": "index",
       "operation-type": "index",
-      "bulk-size": 5000
+      "bulk-size": 5000,
+      "index":"apachelogs-1"
     },
     {
       "name": "query-match-all",
