@@ -30,7 +30,7 @@
       "name": "index",
       "operation-type": "index",
       "bulk-size": 5000,
-      "index":"apachelogs-1"
+      "index":"active-logs"
     },
     {
       "name": "query-match-all",
