@@ -15,18 +15,16 @@
         }
       ]
       
-    },
-    {
-    "templates": [
+    }
+  ],
+   "templates": [
         {
         "name": "apachelogs-template",
         "index-pattern": "apachelogs-*",
         "delete-matching-indices": true,
         "template": "template.json"
         }
-      ]
-    }
-  ],
+      ],
   "operations": [
     {
       "name": "index",
