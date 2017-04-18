@@ -7,6 +7,7 @@
       "types": [
         {
           "name": "logs",
+          "auto-managed":false,
           "mapping": "mappings.json",
           "documents": "logs.json.bz2",
           "document-count": 300000,
