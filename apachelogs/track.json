@@ -3,7 +3,7 @@
   "description": "short description",
   "indices": [
     {
-      "name": "apachelogs-1",
+      "name": "active-logs",
       "auto-managed":false,
       "types": [
         {
