@@ -4,10 +4,10 @@
   "indices": [
     {
       "name": "apachelogs-1",
+      "auto-managed":false,
       "types": [
         {
           "name": "logs",
-          "auto-managed":false,
           "mapping": "mappings.json",
           "documents": "logs.json.bz2",
           "document-count": 300000,
